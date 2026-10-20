@@ -1,0 +1,44 @@
+@layer theme, base, antd, components, utilities;
+
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f3efe6;
+  color: #1e293b;
+}
+
+.dashboard-table .ant-table {
+  background: transparent;
+}
+
+.dashboard-table .ant-table-thead > tr > th {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-table .ant-table-tbody > tr > td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.dashboard-table .ant-table-container,
+.dashboard-table .ant-table-content {
+  border-radius: 0 0 24px 24px;
+}
+
+.dashboard-modal .ant-modal-content {
+  padding: 28px;
+}
+
+.dashboard-modal .ant-modal-header {
+  margin-bottom: 8px;
+}
