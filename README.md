@@ -72,6 +72,7 @@ Cursor was used in two places only:
 ### What I would add with more time
 
 - Auth, roles, and a real API client (swap mock services for Axios)
+- Optimistic updates. Everything is local right now, so they were not needed. On a real backend I would update the cache immediately and roll back on error.
 - Tests for filters, form schema, and mutations
 - query error boundaries that are less ad-hoc
 - Optional description field on create/edit (the mock already supports it)
@@ -147,6 +148,7 @@ TanStack Query روی همین سرویس‌ها سوار است. بعد از س
 ### اگر وقت بیشتری بود
 
 - احراز هویت، نقش‌ها و کلاینت واقعی API به‌جای mock
+- Optimistic updates. فعلاً همه چیز لوکال است و نیازی نبود؛ اگر بک‌اند واقعی بود، کش را همان لحظه عوض می‌کردم و در خطا برمی‌گرداندم.
 - تست برای فیلتر، اسکیما فرم و mutationها
 - مدیریت خطای یکدست‌تر
 - فیلد اختیاری توضیحات در ساخت/ویرایش (mock از قبل پشتیبانی می‌کند)
